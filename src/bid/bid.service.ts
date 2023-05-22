@@ -111,7 +111,7 @@ export class BidService {
     }
     async getProjects(){
         return await this.listOfProjectsRepository.findBy({
-            propose_status: Equal("2"),
+            propose_status: Equal("3"),
             frontend_project_status: Equal("open"),
             bidstatus: IsNull()
         })
