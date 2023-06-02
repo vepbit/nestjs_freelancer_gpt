@@ -7,9 +7,11 @@ import { HttpModule } from '@nestjs/axios';
 import { Dialogflow } from 'src/entities/dialogflow.entity';
 import { List } from 'src/entities/list.entity';
 import { Bids } from 'src/entities/bids.entity';
+import { ProjectModule } from 'src/project/project.module';
 
 @Module({
   imports: [
+    ProjectModule,
     HttpModule.register({
       timeout: 120000,
       maxRedirects: 3,
@@ -19,4 +21,4 @@ import { Bids } from 'src/entities/bids.entity';
   providers: [BidService],
   controllers: [BidController]
 })
-export class BidModule {}
+export class BidModule { }

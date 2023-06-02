@@ -28,7 +28,7 @@ export class List {
 
   @Column()
   timezone_offset: string;
-  
+
   @Column()
   assisted: string;
 
@@ -46,7 +46,7 @@ export class List {
 
   @Column()
   projectlanguage: string;
-  
+
   @Column()
   userid: number;
 
@@ -85,7 +85,7 @@ export class List {
 
   @Column()
   bidstatus: string;
-  
+
   @Column()
   tagsid: string;
 
